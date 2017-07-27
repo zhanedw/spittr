@@ -1,9 +1,10 @@
 package ca.statcan.zhanedw.spittr.config;
 
+import ca.statcan.zhanedw.spittr.web.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Created by haiting on 4/5/2017.
+ * Replcace web.xml. Configure the DispatcherServlet
  */
 public class SpittrWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
 

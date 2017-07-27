@@ -1,4 +1,4 @@
-package ca.statcan.zhanedw.spittr.config;
+package ca.statcan.zhanedw.spittr.web;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -10,7 +10,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 /**
- * Configuration for the Web MVC
+ * Configuration for the Web MVC - web's application context
  */
 @Configuration
 @EnableWebMvc
@@ -28,6 +28,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
+        // Serve static content
         configurer.enable();
     }
 }

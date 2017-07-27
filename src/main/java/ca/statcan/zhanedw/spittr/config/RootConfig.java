@@ -6,7 +6,7 @@ import org.springframework.context.annotation.FilterType;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 /**
- * Created by haiting on 4/5/2017.
+ * Middle tier and db tier's application context
  */
 
 @Configuration
